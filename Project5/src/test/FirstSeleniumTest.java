@@ -20,7 +20,7 @@ public class FirstSeleniumTest {
 	
 		if(browser.contains("Chrome")) {
 			System.setProperty("webdriver.chrome.bin","C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe");
-			System.setProperty("webdriver.chrome.driver", "G:\\Eclipse workspaces\\Test Automation\\Project4\\lib\\chromedriver\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "G:\\Eclipse workspaces\\Test Automation\\Project5\\lib\\chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 	
