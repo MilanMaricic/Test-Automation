@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8638" started-at="2020-03-31T08:10:12Z" finished-at="2020-03-31T08:10:20Z">
+  <suite name="Suite" duration-ms="9883" started-at="2020-03-31T14:58:08Z" finished-at="2020-03-31T14:58:18Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8638" started-at="2020-03-31T08:10:12Z" finished-at="2020-03-31T08:10:20Z">
+    <test name="Test" duration-ms="9883" started-at="2020-03-31T14:58:08Z" finished-at="2020-03-31T14:58:18Z">
       <class name="test.FirstSelenium">
-        <test-method status="PASS" signature="loadPageTest()[pri:0, instance:test.FirstSelenium@28feb3fa]" name="loadPageTest" duration-ms="8618" started-at="2020-03-31T08:10:12Z" finished-at="2020-03-31T08:10:20Z">
+        <test-method status="PASS" signature="loadPageTest()[pri:0, instance:test.FirstSelenium@28feb3fa]" name="loadPageTest" duration-ms="9862" started-at="2020-03-31T14:58:08Z" finished-at="2020-03-31T14:58:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loadPageTest -->
       </class> <!-- test.FirstSelenium -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

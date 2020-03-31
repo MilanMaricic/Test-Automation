@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 //import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -23,6 +24,7 @@ public class FirstSelenium {
 		
 		//commands for executing what test will do
 		driver.get(siteURL);
+		Assert.assertEquals(driver.getTitle(), "ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation" );
 		driver.quit();
 
 	}
