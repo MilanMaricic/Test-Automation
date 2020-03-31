@@ -7,7 +7,8 @@ import org.testng.annotations.Test;
 
 public class FirstSelenium {
 	
-	//public static void main(String[] args) {
+	public String siteURL = "https://demoqa.com/";
+	
 		
 	@Test
 	public void loadPageTest() {
@@ -21,7 +22,7 @@ public class FirstSelenium {
 		WebDriver driver = new FirefoxDriver();
 		
 		//commands for executing what test will do
-		driver.get("http://parabank.parasoft.com/parabank/index.htm;jsessionid=92DD59CD330DBAA5B75776596A749955");
+		driver.get(siteURL);
 		driver.quit();
 
 	}

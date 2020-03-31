@@ -3,6 +3,7 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 /**
  * This is improved class of Project2, where we use methods declaration 
@@ -13,20 +14,26 @@ public class FirstSelenium {
 	
 	static String browser;
 	static WebDriver driver;
+	
+	//URL to the testing site
+	public String siteURL = "https://petstore.octoperf.com/actions/Catalog.action";
 
-	public static void main(String[] args) {
-		setBrowser();
-		setBrowserConfig();
-		runTest();
-		
+	
+	@Test
+	public void setupTest() {
+		FirstSelenium runner = new FirstSelenium();
+		runner.setBrowser();
+		runner.setBrowserConfig();
+		runner.runTest();
 	}
 	
-	public static void setBrowser() {
+	
+	public void setBrowser() {
 		browser="Firefox";
-		
 	}
 	
-	public static void setBrowserConfig() {
+	
+	public void setBrowserConfig() {
 		String projectLocation = System.getProperty("user.dir");
 		 
 		if(browser.contains("Chrome")) {
@@ -43,8 +50,9 @@ public class FirstSelenium {
 	}
 	
 	
-	public static void runTest() {
-		driver.get("http://parabank.parasoft.com/parabank/index.htm;jsessionid=92DD59CD330DBAA5B75776596A749955");
+	public void runTest() {
+		driver.get(siteURL);
+		System.out.println("Site title is: "+driver.getTitle());
 		driver.quit();
 	}
 
