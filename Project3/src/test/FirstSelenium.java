@@ -3,6 +3,7 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 /**
@@ -52,7 +53,7 @@ public class FirstSelenium {
 	
 	public void runTest() {
 		driver.get(siteURL);
-		System.out.println("Site title is: "+driver.getTitle());
+		Assert.assertEquals(driver.getTitle(), "JPetStore Demo");
 		driver.quit();
 	}
 

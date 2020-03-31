@@ -2,6 +2,7 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class FirstSelenium {
@@ -19,8 +20,7 @@ public class FirstSelenium {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get(siteURL);
-		System.out.println("Site title is: "+driver.getTitle());
-		
+		Assert.assertEquals(driver.getTitle(), "Basic Calculator");
 		driver.quit();
 
 	}
