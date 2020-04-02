@@ -25,7 +25,7 @@ public class PropertiesFile {
 			InputStream input = new FileInputStream("G:\\Eclipse workspaces\\Test Automation\\Project4\\src\\config\\config.properties");
 			prop.load(input);
 			System.out.println(prop.getProperty("browser"));
-			SetupTest.browser = prop.getProperty("browser");
+		//	SetupTest.browser = prop.getProperty("browser");
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

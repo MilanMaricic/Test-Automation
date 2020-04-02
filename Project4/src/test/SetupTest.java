@@ -7,9 +7,9 @@ import config.PropertiesFile;
 
 public class SetupTest {
 		
-	public static WebDriver driver;
-	public static String browser;
-	public static String siteURL = "https://petstore.octoperf.com/actions/Catalog.action";
+	private WebDriver driver;
+	public String browser;
+	private String siteURL = "https://petstore.octoperf.com/actions/Catalog.action";
 		
 		
 		/*
@@ -23,11 +23,11 @@ public class SetupTest {
 		}
 		*/
 		
-		public static void setBrowser() {
+		public void setBrowser() {
 			browser = "Chrome";
 		}
 		
-		public static void setBrowserConfig() {
+		public void setBrowserConfig() {
 			String projectLocation = System.getProperty("user.dir");
 			
 			if(browser.contains("Chrome")) {
@@ -45,7 +45,7 @@ public class SetupTest {
 			
 		}
 		
-		public static void runTest() {
+		public void runTest() {
 			driver.get(siteURL);
 			driver.quit();
 		}

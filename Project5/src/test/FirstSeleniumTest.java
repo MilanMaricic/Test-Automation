@@ -3,19 +3,21 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Test;
 
 public class FirstSeleniumTest {
 	
-	static WebDriver driver;
-	public static String browser;
+	private WebDriver driver;
+	private static String browser;
+	private String siteURL= "http://newtours.demoaut.com/";
 	
 	
 	
-	public static void setBrowser() {
+	public void setBrowser() {
 		browser = "Firefox";
 	}
 
-	public static void setBrowserConfig() {
+	public void setBrowserConfig() {
 		String projectLocation = System.getProperty("user.dir");
 	
 		if(browser.contains("Chrome")) {
@@ -31,8 +33,16 @@ public class FirstSeleniumTest {
 		}
 	}
 
-	public static void runTest() {
-		driver.get("http://parabank.parasoft.com/parabank/index.htm;jsessionid=92DD59CD330DBAA5B75776596A749955");
+	public void runTest() {
+		driver.get(siteURL);
 		driver.quit();
+	}
+	
+	@Test
+	public void testRunner() {
+		FirstSeleniumTest runner = new FirstSeleniumTest();
+		runner.setBrowser();
+		runner.setBrowserConfig();
+		runner.runTest();
 	}
 }	

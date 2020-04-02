@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5" started-at="2020-03-31T08:38:13Z" finished-at="2020-03-31T08:38:13Z">
+  <suite name="Default suite" duration-ms="7113" started-at="2020-04-02T13:36:33Z" finished-at="2020-04-02T13:36:40Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5" started-at="2020-03-31T08:38:13Z" finished-at="2020-03-31T08:38:13Z">
+    <test name="Default test" duration-ms="7113" started-at="2020-04-02T13:36:33Z" finished-at="2020-04-02T13:36:40Z">
+      <class name="test.CheckTitleTest">
+        <test-method status="PASS" signature="testRunner()[pri:0, instance:test.CheckTitleTest@5034c75a]" name="testRunner" duration-ms="7093" started-at="2020-04-02T13:36:33Z" finished-at="2020-04-02T13:36:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRunner -->
+      </class> <!-- test.CheckTitleTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
