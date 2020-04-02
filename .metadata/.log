@@ -884,3 +884,46 @@ java -ea -classpath C:\Users\Milan\eclipse\java-oxygen\eclipse\configuration\org
   Class:     org.testng.remote.RemoteTestNG
   Args:      -serport 55660 -protocol json -d G:\Eclipse workspaces\Test Automation\Project3\test-output C:\Users\Milan\AppData\Local\Temp\testng-eclipse--973395122\testng-customsuite.xml
 java -ea -classpath C:\Users\Milan\eclipse\java-oxygen\eclipse\configuration\org.eclipse.osgi\496\0\.cp\lib\testng-remote.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\resources.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\rt.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\jsse.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\jce.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\charsets.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\jfr.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\access-bridge-64.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\cldrdata.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\dnsns.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jaccess.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\jfxrt.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\localedata.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\nashorn.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunec.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunjce_provider.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunmscapi.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\sunpkcs11.jar:C:\Program Files\Java\jdk1.8.0_171\jre\lib\ext\zipfs.jar:G:\Eclipse workspaces\Test Automation\Project3\bin:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\client-combined-3.141.59-sources.jar:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\client-combined-3.141.59.jar:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\byte-buddy-1.8.15.jar:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\commons-exec-1.3.jar:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\guava-25.0-jre.jar:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\okhttp-3.11.0.jar:G:\Eclipse workspaces\Test Automation\Project3\lib\seleniumjars\okio-1.14.0.jar:C:\Users\Milan\.p2\pool\plugins\org.testng_6.14.2.r201802161450.jar:C:\Users\Milan\.p2\pool\plugins\com.beust.jcommander_1.72.0.jar:C:\Users\Milan\.p2\pool\plugins\org.apache-extras.beanshell.bsh_2.0.0.b6.jar:C:\Users\Milan\.p2\pool\plugins\org.yaml.snakeyaml_1.17.0.jar org.testng.remote.RemoteTestNG -serport 55660 -protocol json -d G:\Eclipse workspaces\Test Automation\Project3\test-output C:\Users\Milan\AppData\Local\Temp\testng-eclipse--973395122\testng-customsuite.xml
+!SESSION 2020-04-02 12:25:45.940 -----------------------------------------------
+eclipse.buildId=4.7.3.M20180330-0640
+java.version=1.8.0_171
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2020-04-02 12:26:01.726
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Milan'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ide 2 17 2020-04-02 12:26:04.038
+!MESSAGE Server ‘org.eclipse.epp.logging.aeri.ide.server’ failed with exception: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $. ; version: 2.0.7.v20170906-1327
+!STACK 0
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:224)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:852)
+	at com.google.gson.Gson.fromJson(Gson.java:801)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.json.Json.deserialize(Json.java:91)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.IO.refreshConfiguration(IO.java:66)
+	at org.eclipse.epp.internal.logging.aeri.ide.server.mars.ServerConnection.startUp(ServerConnection.java:124)
+	at com.google.common.util.concurrent.AbstractIdleService$DelegateService$1.run(AbstractIdleService.java:62)
+	at com.google.common.util.concurrent.Callables$4.run(Callables.java:122)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:213)
+	... 9 more
+
+!ENTRY org.eclipse.equinox.p2.transport.ecf 4 1002 2020-04-02 12:38:39.981
+!MESSAGE HTTP Remote File Permanently Removed: http://beust.com/eclipse/compositeContent.xml
+!STACK 1
+org.eclipse.ecf.filetransfer.BrowseFileTransferException: HttpComponents connection error response code 410.
+	at org.eclipse.ecf.provider.filetransfer.httpclient4.HttpClientFileSystemBrowser.runRequest(HttpClientFileSystemBrowser.java:293)
+	at org.eclipse.ecf.provider.filetransfer.browse.AbstractFileSystemBrowser$DirectoryJob.run(AbstractFileSystemBrowser.java:69)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:56)
+!SUBENTRY 1 org.eclipse.ecf.identity 4 0 2020-04-02 12:38:39.981
+!MESSAGE HttpComponents connection error response code 410.

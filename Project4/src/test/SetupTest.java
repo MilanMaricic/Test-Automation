@@ -9,6 +9,7 @@ public class SetupTest {
 		
 	public static WebDriver driver;
 	public static String browser;
+	public static String siteURL = "https://petstore.octoperf.com/actions/Catalog.action";
 		
 		
 		/*
@@ -45,7 +46,7 @@ public class SetupTest {
 		}
 		
 		public static void runTest() {
-			driver.get("http://parabank.parasoft.com/parabank/index.htm;jsessionid=92DD59CD330DBAA5B75776596A749955");
+			driver.get(siteURL);
 			driver.quit();
 		}
 
