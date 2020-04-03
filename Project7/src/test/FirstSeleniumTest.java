@@ -3,10 +3,12 @@ package test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 
 public class FirstSeleniumTest {
 	public String browser;
 	WebDriver driver;
+	private String siteURL = "http://parabank.parasoft.com/parabank/index.htm;jsessionid=92DD59CD330DBAA5B75776596A749955";
 	
 	
 	public void setbrowser(){
@@ -31,9 +33,9 @@ public class FirstSeleniumTest {
 	
 	
 	public void runTest(){
-		driver.get("http://parabank.parasoft.com/parabank/index.htm;jsessionid=92DD59CD330DBAA5B75776596A749955");
+		driver.get(siteURL);
 		System.out.println(driver.getTitle());
-		
+		Assert.assertEquals(driver.getTitle(), "ParaBank | Welcome | Online Banking");
 		driver.quit();
 	}
 
